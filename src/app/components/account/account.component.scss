@@ -1,0 +1,127 @@
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+    width: 100%;
+}
+
+#data {
+    width: 500px;
+}
+
+#profile {
+    display: flex;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+#profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 25px;
+    justify-content: center;
+}
+
+#avatar {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: black;
+    font-size: 40px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.package {
+    display: flex;
+    flex-direction: column;
+}
+
+.package .choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkbox-label {
+    display: flex;
+    width: 100px;
+    height: 70px;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+    user-select: none;
+}
+
+.free {
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.premium {
+    border-radius: 7px;
+    border: 2px solid transparent;
+    background:
+        linear-gradient(to right, var(--main-bg-color), var(--main-bg-color)) padding-box,
+        linear-gradient(to right, #c75413, #ffd600) border-box;
+}
+
+.premium span {
+    background: linear-gradient(to right, #db6d2f 20%, #ffd600 40%, #ffd600 60%, #db6d2f 80%);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input[type='radio']:checked + label {
+    background-image: linear-gradient(to right, #c75413, #ffd600);
+    background-color: transparent;
+    color: black;
+}
+
+input[type='radio']:checked + label span {
+    background-image: linear-gradient(to right, black, black);
+}
+
+input[type='radio'][id='free']:checked + label {
+    background-image: none;
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+#send {
+    width: 150px;
+    margin-left: auto;
+    padding: 10px;
+    height: 40px;
+    background: var(--secondary-color);
+    border-radius: 7px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    background: var(--error-color);
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+}

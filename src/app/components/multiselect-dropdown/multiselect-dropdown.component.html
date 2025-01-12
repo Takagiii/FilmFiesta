@@ -1,0 +1,20 @@
+<div class="multiselect-dropdown">
+    <button class="dropdown-button" (click)="toggleDropdown()">{{ placeholder }}</button>
+    @if (isDropdownOpen) {
+        <div class="dropdown-list">
+            @for (option of options; track options) {
+                <label class="checkbox-label">
+                    <input
+                        type="checkbox"
+                        class="checkbox-input"
+                        [checked]="isSelected(option)"
+                        (change)="toggleSelection(option)"
+                    />
+                    {{ 'genre.' + option | translate }}
+                </label>
+            } @empty {
+                <div class="no-data-message">Aucune donnée</div>
+            }
+        </div>
+    }
+</div>

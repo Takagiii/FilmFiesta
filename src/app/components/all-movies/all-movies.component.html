@@ -1,0 +1,26 @@
+<div class="top-bar">
+    <input
+        #searchInput
+        id="search-movie"
+        type="text"
+        [placeholder]="'allMovies.search' | translate"
+        (keyup)="onSearchChange()"
+    />
+    <app-multiselect-dropdown
+        id="dropdown-genre"
+        [placeholder]="'allMovies.genres' | translate"
+        [options]="genres"
+        [selectedLabel]="genreSelected"
+    />
+</div>
+@if (filterMovies.length === 0 && !isLoaded) {
+    <div class="error">{{ "loading" | translate }}</div>
+} @else if (filterMovies.length === 0 && isLoaded) {
+    <div class="no-movie">{{ "allMovies.noData" | translate }}</div>
+} @else {
+    <div class="grid">
+        @for (movie of filterMovies; track movie.id) {
+            <app-movie-card [movieObject]="movie" routerLink="/movie" [queryParams]="{ id: movie.id }" />
+        }
+    </div>
+}

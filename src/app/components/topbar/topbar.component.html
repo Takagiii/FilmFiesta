@@ -1,0 +1,10 @@
+<div>
+    <img id="lang" [ngSrc]="flagPath" height="80" width="120" (click)="changeLanguage()" alt="lang" />
+    @if (authService.isLoggedIn) {
+        @if (!this.router.url.endsWith("account")) {
+            <app-profile class="pointer" routerLink="/account"/>
+        }
+    } @else if (!this.router.url.endsWith("login") && !this.router.url.endsWith("create-account")) {
+        <button routerLink="/login" class="login-link">{{ "login.login" | translate }}</button>
+    }
+</div>

@@ -1,0 +1,13 @@
+<div id="profile">
+    <div id="avatar">
+        <span>{{ authService.firstLaterName }}</span>
+    </div>
+    <div id="name">
+        <span class="first-name">{{ authService.name }}</span>
+        @if (authService.isPremium) {
+            <span class="accent-color">Premium</span>
+        } @else {
+            <span class="free">Gratuit</span>
+        }
+    </div>
+</div>

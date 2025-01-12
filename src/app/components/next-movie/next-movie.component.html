@@ -1,0 +1,23 @@
+<div>
+    <p class="info" [innerHTML]="'next.vote' | translate"></p>
+    <div id="film-votes-gird">
+        @for (movie of movies; track movie) {
+            <app-movie-card [isBig]="true" [movieObject]="movie" (click)="handleVote(movie)" />
+        }
+    </div>
+
+    @if (isDisplayVote) {
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                @if (isVoteOk) {
+                    <h2 [innerHTML]="'next.successTitle' | translate"></h2>
+                    <p class="content" [innerHTML]="'next.success' | translate"></p>
+                } @else {
+                    <h2 [innerHTML]="'next.errorTitle' | translate"></h2>
+                    <p class="content" [innerHTML]="'next.error' | translate"></p>
+                }
+                <button id="close" (click)="handleCloseVotePopup()" [innerHTML]="'next.close' | translate"></button>
+            </div>
+        </div>
+    }
+</div>

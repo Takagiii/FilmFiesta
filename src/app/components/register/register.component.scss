@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.center {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.credential {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.login {
+    text-decoration: underline;
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+.action {
+    margin-top: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#app-name {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+#register-container {
+    width: 450px;
+    margin-bottom: 45px;
+}
+
+#password,
+#password-confirmation {
+    margin-top: 10px;
+}
+
+input[type='submit'] {
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    min-width: 100px;
+    font-size: 15px;
+}
+
+.package {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.package .choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkbox-label {
+    display: flex;
+    width: 100px;
+    height: 70px;
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border-radius: 7px;
+    user-select: none;
+}
+
+.free {
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+
+.premium {
+    border-radius: 7px;
+    border: 2px solid transparent;
+    background:
+        linear-gradient(to right, var(--main-bg-color), var(--main-bg-color)) padding-box,
+        linear-gradient(to right, #c75413, #ffd600) border-box;
+}
+
+.premium span {
+    background: linear-gradient(to right, #db6d2f 20%, #ffd600 40%, #ffd600 60%, #db6d2f 80%);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input[type='radio']:checked + label {
+    background-image: linear-gradient(to right, #c75413, #ffd600);
+    background-color: transparent;
+    color: black;
+}
+
+input[type='radio']:checked + label span {
+    background-image: linear-gradient(to right, black, black);
+}
+
+input[type='radio'][id='free']:checked + label {
+    background-image: none;
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.action {
+    margin-top: 40px;
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 15px;
+}

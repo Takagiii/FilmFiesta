@@ -1,0 +1,77 @@
+<div id="center">
+    <div id="data">
+        <div id="profile">
+            <div id="avatar">
+                <span>{{ authService.firstLaterName }}</span>
+            </div>
+            <div id="profile-info">
+                <div id="name">{{ authService.name }}</div>
+            </div>
+        </div>
+        <div id="info">
+            <p id="email">Email: {{ authService.email }}</p>
+            <p id="subscription">{{ "account.currentPlan" | translate }}: {{ authService.subscriptionType }}</p>
+            @if (authService.isPremium) {
+                <p id="date">Expiration: {{ expirationDate }}</p>
+            } @else {
+                <form class="package" [formGroup]="subscription" (ngSubmit)="onSubmit()">
+                    <div class="package">
+                        <p>{{ "account.changePlan" | translate }}:</p>
+                        <div class="choice">
+                            <input
+                                type="radio"
+                                formControlName="subscription"
+                                name="subscription"
+                                id="free"
+                                value="0"
+                                hidden
+                                checked
+                                required
+                            />
+                            <label class="checkbox-label free" for="free">{{ "signup.free" | translate }}</label>
+
+                            <input
+                                type="radio"
+                                formControlName="subscription"
+                                name="subscription"
+                                id="week"
+                                value="1"
+                                hidden
+                            />
+                            <label class="checkbox-label premium" for="week">
+                                <span>{{ "signup.1w" | translate }}</span>
+                            </label>
+
+                            <input
+                                type="radio"
+                                formControlName="subscription"
+                                name="subscription"
+                                id="month"
+                                value="2"
+                                hidden
+                            />
+                            <label class="checkbox-label premium" for="month">
+                                <span>{{ "signup.1m" | translate }}</span>
+                            </label>
+
+                            <input
+                                type="radio"
+                                formControlName="subscription"
+                                name="subscription"
+                                id="year"
+                                value="3"
+                                hidden
+                            />
+                            <label class="checkbox-label premium" for="year">
+                                <span>{{ "signup.1y" | translate }}</span>
+                            </label>
+                        </div>
+                    </div>
+                    <input id="send" type="submit" value="{{ 'account.changePlan' | translate }}" />
+                </form>
+            }
+
+            <button id="logout" (click)="authService.logout()">{{ "account.logout" | translate }}</button>
+        </div>
+    </div>
+</div>

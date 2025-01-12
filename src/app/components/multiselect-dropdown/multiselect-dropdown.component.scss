@@ -1,0 +1,56 @@
+.multiselect-dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    position: relative;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.dropdown-button::after {
+    content: ''; /* Créer un élément pseudo-élément pour le triangle */
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white; /* Taille et couleur du triangle */
+}
+
+.dropdown-list {
+    position: absolute;
+    width: fit-content;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-list label {
+    display: block;
+    padding: 5px;
+    width: fit-content;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.checkbox-label {
+    cursor: pointer;
+}
+
+.checkbox-input {
+    width: 16px;
+    height: 16px;
+}

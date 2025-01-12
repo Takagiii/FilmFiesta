@@ -1,0 +1,64 @@
+<div class="center">
+    <div id="register-container">
+        <div>
+            <h1 id="app-name">Film Fiesta</h1>
+            <p class="info" [innerHTML]="'signup.info' | translate"></p>
+        </div>
+        <form class="credential" [formGroup]="registerForm" (ngSubmit)="onSubmit()" ngNoForm>
+            <input
+                id="identify"
+                type="email"
+                placeholder="{{ 'signup.email' | translate }}"
+                formControlName="email"
+                required
+            />
+            <input
+                id="password"
+                type="password"
+                placeholder="{{ 'signup.password' | translate }}"
+                formControlName="password"
+                required
+            />
+            <input
+                id="password-confirmation"
+                type="password"
+                placeholder="{{ 'signup.confirmPassword' | translate }}"
+                formControlName="confirm"
+                required
+            />
+            @if (!isPasswordMatch) {
+                <p class="error">{{ "signup.errorMatch" | translate }}</p>
+            } @else if (!isPasswordValid) {
+                <p class="error">{{ "signup.errorPassword" | translate }}</p>
+            }
+
+            <div class="package">
+                <p>{{ "signup.choice" | translate }}</p>
+                <div class="choice">
+                    <input type="radio" formControlName="subscription" name="subscription" id="free" value="0" hidden checked required/>
+                    <label class="checkbox-label free" for="free">{{ "signup.free" | translate }}</label>
+
+                    <input type="radio" formControlName="subscription" name="subscription" id="week" value="1" hidden />
+                    <label class="checkbox-label premium" for="week">
+                        <span>{{ "signup.1w" | translate }}</span>
+                    </label>
+
+                    <input type="radio" formControlName="subscription" name="subscription" id="month" value="2" hidden />
+                    <label class="checkbox-label premium" for="month">
+                        <span>{{ "signup.1m" | translate }}</span>
+                    </label>
+
+                    <input type="radio" formControlName="subscription" name="subscription" id="year" value="3" hidden />
+                    <label class="checkbox-label premium" for="year">
+                        <span>{{ "signup.1y" | translate }}</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="action">
+                <a class="login" routerLink="/login">{{ "login.login" | translate }}</a>
+                <input type="submit" value="{{ 'signup.create' | translate }}" />
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="movie-card clickable" [ngClass]="isBig ? 'big-card' : 'small-card'">
+    <img class="movie-img" src="{{ movieObject.affiche }}" alt="film-{{ movieObject.id }}" />
+
+    <p class="movie-title">{{ movieObject.titre }}</p>
+    <p class="movie-real">{{ movieObject.realisateur }}</p>
+</div>

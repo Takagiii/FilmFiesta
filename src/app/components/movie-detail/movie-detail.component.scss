@@ -1,0 +1,33 @@
+#movie-main-info {
+    display: flex;
+    margin: 20px;
+}
+
+#movie-image {
+    width: 334px;
+    height: 501px;
+    border-radius: 10px;
+}
+
+#text-info {
+    margin-left: 20px;
+    width: 50%;
+}
+
+#movie-title {
+    margin: 0;
+}
+
+#movie-video {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+#player {
+    width: 100%;
+    max-width: 1500px;
+    border-radius: 10px;
+    border: none;
+}
+

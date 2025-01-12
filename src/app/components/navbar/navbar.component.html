@@ -1,0 +1,19 @@
+<nav id="navbar">
+    <h1 id="title"><a routerLink="/">Film Fiesta</a></h1>
+    <ul>
+        <li>
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{
+                "navbar.todayMovie" | translate
+            }}</a>
+        </li>
+        <li>
+            <a routerLink="all" routerLinkActive="active">{{ "navbar.allMovies" | translate }}</a>
+        </li>
+        <li>
+            <a routerLink="next" routerLinkActive="active">{{ "navbar.next" | translate }}</a>
+        </li>
+        <li>
+            <a routerLink="account" routerLinkActive="active">{{ "navbar.account" | translate }}</a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,7 @@
+@if (movie) {
+    <app-movie-detail [movie]="movie" />
+} @else if (isError) {
+    <app-not-found />
+} @else {
+    <p>{{ "loading" | translate }}</p>
+}

@@ -1,0 +1,28 @@
+* {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 5px;
+}
+
+#lang {
+    width: 45px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.login-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 40px;
+    background: var(--secondary-color);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}

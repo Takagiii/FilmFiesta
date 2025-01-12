@@ -1,0 +1,66 @@
+:root {
+    --main-bg-color: #0b161a;
+    --navbar-bg-color: #111a1f;
+    --secondary-color: #4799c8;
+    --text-color: #ffff;
+    --error-color: #c84747; // #c85247 // #ff0000
+}
+
+body {
+    margin: 0;
+    background: var(--main-bg-color);
+    font-family: sans-serif;
+    color: white;
+}
+
+.accent-color {
+    background: linear-gradient(to right, #db6d2f 20%, #ffd600 40%, #ffd600 60%, #db6d2f 80%);
+    background-size: 200% auto;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shine 4s linear infinite;
+    @keyframes shine {
+        to {
+            background-position: 200% center;
+        }
+    }
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'] {
+    width: 100%;
+    height: 45px;
+    font-size: 20px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid white;
+    transition: 0.5s;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus {
+    border: 3px solid var(--secondary-color);
+    outline: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}

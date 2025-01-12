@@ -1,0 +1,36 @@
+.movie-card {
+    width: 200px;
+}
+
+.movie-img {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.movie-title {
+    font-size: 25px;
+    margin: 5px;
+}
+
+.movie-real {
+    font-size: 13px;
+    margin: 5px;
+}
+.big-card {
+    width: 334px;
+}
+
+.big-card .movie-img {
+    height: 501px;
+    width: 334px;
+}
+
+.big-card .movie-title {
+    font-size: 30px;
+}
+
+.big-card .movie-real {
+    font-size: 15px;
+}
