@@ -1,0 +1,63 @@
+{
+  "navbar": {
+    "todayMovie": "Movie of the Day",
+    "allMovies": "All Movies",
+    "next": "Vote for the next movie",
+    "account": "My Account"
+  },
+  "allMovies": {
+    "search": "Search a movie title...",
+    "genres": "Filter here",
+    "noData": "No movies found :/"
+  },
+  "movie": {
+    "noData": "Movie not found :/"
+  },
+  "next": {
+    "vote": "Vote for the next <span class='accent-color'>free</span> movie!",
+    "close": "Close",
+    "errorTitle": "Error",
+    "error": "An error occurred while voting.",
+    "successTitle": "Thank you!",
+    "success": "Your vote has been successfully recorded."
+  },
+  "account": {
+    "currentPlan": "Current plan",
+    "logout": "Logout",
+    "changePlan": "Change plan"
+  },
+  "loading": "Loading...",
+  "genre": {
+    "Action": "Action",
+    "Comedie": "Comedy",
+    "Horreur": "Horror",
+    "Kid": "Kids",
+    "TV_Show": "TV Show",
+    "Drama": "Drama",
+    "Musical": "Musical",
+    "SciFi": "SciFi"
+  },
+  "login": {
+    "login": "Login",
+    "info": "Enjoy a <span class='accent-color'>wide range of movies</span> by creating your Film Fiesta <span class='accent-color'>account</span>!",
+    "email": "Email",
+    "password": "Password",
+    "connection": "Login",
+    "create": "Create an account",
+    "wrong": "Wrong email or password"
+  },
+  "signup": {
+    "info": "Every day, a <span class='accent-color'>celebration</span> of cinema.",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "choice": "Choose your plan!",
+    "free": "Free",
+    "1w": "1 week",
+    "1m": "1 month",
+    "1y": "1 year",
+    "create": "Create account",
+    "errorMatch": "Passwords do not match",
+    "errorPassword": "Password must be at least 1 number, 1 uppercase and 1 special character"
+  }
+}

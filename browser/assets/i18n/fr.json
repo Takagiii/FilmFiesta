@@ -1,0 +1,63 @@
+{
+  "navbar": {
+    "todayMovie": "Film du jour",
+    "allMovies": "Tous les films",
+    "next": "Votes du prochain film",
+    "account": "Mon compte"
+  },
+  "allMovies": {
+    "search": "Rechercher un titre de film...",
+    "genres": "Filtrer ici",
+    "noData": "Aucun film trouvé :/"
+  },
+  "movie": {
+    "noData": "Film introuvable :/"
+  },
+  "next": {
+    "vote": "Votez pour le prochain film <span class='accent-color'>gratuit</span> !",
+    "close": "Fermer",
+    "errorTitle": "Erreur",
+    "error": "Une erreur est survenue lors du vote.",
+    "successTitle": "Merci !",
+    "success": "Votre vote a bien été pris en compte."
+  },
+  "account": {
+    "currentPlan": "Forfait actuel",
+    "logout": "Déconnexion",
+    "changePlan": "Changer de forfait"
+  },
+  "loading": "Chargement...",
+  "genre": {
+    "Action": "Action",
+    "Comedie": "Comédie",
+    "Horreur": "Horreur",
+    "Kid": "Enfants",
+    "TV_Show": "Série",
+    "Drama": "Drame",
+    "Musical": "Musical",
+    "SciFi": "Science-fiction"
+  },
+  "login": {
+    "login": "Se connecter",
+    "info": "Profitez d'un <span class='accent-color'>large éventail de films</span> en créant votre <span class='accent-color'>compte</span> Film Fiesta !",
+    "email": "Email",
+    "password": "Mot de passe",
+    "connection": "Connexion",
+    "create": "Créer un compte",
+    "wrong": "Email ou mot de passe incorrect"
+  },
+  "signup": {
+    "info": "Chaque jour, une <span class='accent-color'>célébration</span> du cinéma.",
+    "email": "Email",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmation du mot de passe",
+    "choice":"Choisissez votre forfait !",
+    "free": "Gratuit",
+    "1w": "1 semaine",
+    "1m": "1 mois",
+    "1y": "1 an",
+    "create": "Créer le compte",
+    "errorMatch": "Les mots de passe ne correspondent pas",
+    "errorPassword": "Le mot de passe doit contenir au moins 1 chiffre, 1 lettre majuscule et 1 caractère spécial"
+  }
+}
